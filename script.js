@@ -41,7 +41,7 @@ function fillDataInCard(cardClone, article) {
         timeZone: "Asia/Jakarta",
     });
 
-    newsSource.innerHTML = `${article.source} · ${date}`; // Change 'source.name' to 'source'
+    newsSource.innerHTML = `${article.source.name} · ${date}`; // Change 'source.name' to 'source'
 
     cardClone.firstElementChild.addEventListener("click", () => {
         window.open(article.url, "_blank");
